@@ -19,5 +19,9 @@ gradlePlugin {
             id = "aiapplication.android.app"
             implementationClass = "com.aiapplication.conventions.AndroidApplicationConventionPlugin"
         }
+        register("androidLibrary") {
+            id = "aiapplication.android.library"
+            implementationClass = "com.aiapplication.conventions.AndroidLibraryConventionPlugin"
+        }
     }
 }

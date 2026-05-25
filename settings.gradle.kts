@@ -27,3 +27,4 @@ rootProject.name = "AiApplication"
 
 includeBuild("build-logic")
 include(":app")
+include(":core:design")
