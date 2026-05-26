@@ -23,8 +23,9 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "AiApplication"
+rootProject.name = "Chekkit"
 
 includeBuild("build-logic")
 include(":app")
 include(":core:design")
+include(":core:di")

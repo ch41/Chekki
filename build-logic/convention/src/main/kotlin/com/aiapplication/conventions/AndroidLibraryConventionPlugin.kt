@@ -48,6 +48,9 @@ class AndroidLibraryConventionPlugin : Plugin<Project> {
                 add("implementation", "androidx.compose.material3:material3")
                 add("implementation", "androidx.compose.ui:ui-tooling-preview")
                 add("debugImplementation", "androidx.compose.ui:ui-tooling")
+
+                add("implementation", "io.insert-koin:koin-android:4.2.1")
+                add("implementation", "io.insert-koin:koin-compose:4.2.1")
             }
         }
     }

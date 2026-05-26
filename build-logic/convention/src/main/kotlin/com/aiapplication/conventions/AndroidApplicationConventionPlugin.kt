@@ -51,6 +51,9 @@ class AndroidApplicationConventionPlugin : Plugin<Project> {
                 add("implementation", "androidx.compose.ui:ui-tooling-preview")
                 add("implementation", "androidx.activity:activity-compose:1.10.0")
                 add("debugImplementation", "androidx.compose.ui:ui-tooling")
+
+                add("implementation", "io.insert-koin:koin-android:4.2.1")
+                add("implementation", "io.insert-koin:koin-compose:4.2.1")
             }
         }
     }
