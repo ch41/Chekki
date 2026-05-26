@@ -23,10 +23,16 @@ android {
     }
 }
 dependencies {
-    implementation(project(":core:design"))
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+
+    implementation(libs.koin.android)
+    implementation(libs.koin.compose)
+
+
+    implementation(project(":core:design"))
+    implementation(project(":core:di"))
 }
