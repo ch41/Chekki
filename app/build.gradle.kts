@@ -1,5 +1,6 @@
 plugins {
     id("aiapplication.android.app")
+    alias(libs.plugins.compose.compiler)
 }
 
 android {
@@ -22,6 +23,7 @@ android {
     }
 }
 dependencies {
+    implementation(project(":core:design"))
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
     testImplementation(libs.junit)
