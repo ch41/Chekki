@@ -14,13 +14,12 @@ class AndroidApplicationConventionPlugin : Plugin<Project> {
         with(target) {
 
             pluginManager.apply("com.android.application")
-            pluginManager.apply("org.jetbrains.kotlin.android")
 
             extensions.configure<ApplicationExtension> {
-                compileSdk = 35
+                compileSdk = 36
 
                 defaultConfig {
-                    targetSdk = 35
+                    targetSdk = 36
                     minSdk = 27
                     testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
                 }
@@ -28,6 +27,9 @@ class AndroidApplicationConventionPlugin : Plugin<Project> {
                 compileOptions {
                     sourceCompatibility = JavaVersion.VERSION_17
                     targetCompatibility = JavaVersion.VERSION_17
+                }
+                buildFeatures {
+                    compose = true
                 }
             }
 
@@ -40,6 +42,15 @@ class AndroidApplicationConventionPlugin : Plugin<Project> {
             dependencies {
                 add("implementation", "androidx.core:core-ktx:1.12.0")
                 add("implementation", "org.jetbrains.kotlin:kotlin-stdlib")
+
+                //compose
+                add("implementation", platform("androidx.compose:compose-bom:2025.02.00"))
+                add("implementation", "androidx.compose.ui:ui")
+                add("implementation", "androidx.compose.ui:ui-graphics")
+                add("implementation", "androidx.compose.material3:material3")
+                add("implementation", "androidx.compose.ui:ui-tooling-preview")
+                add("implementation", "androidx.activity:activity-compose:1.10.0")
+                add("debugImplementation", "androidx.compose.ui:ui-tooling")
             }
         }
     }

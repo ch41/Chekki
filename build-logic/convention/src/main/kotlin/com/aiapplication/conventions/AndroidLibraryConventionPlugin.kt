@@ -13,10 +13,9 @@ class AndroidLibraryConventionPlugin : Plugin<Project> {
     override fun apply(target: Project) {
         with(target) {
             pluginManager.apply("com.android.library")
-            pluginManager.apply("org.jetbrains.kotlin.android")
 
             extensions.configure<LibraryExtension> {
-                compileSdk = 35
+                compileSdk = 36
                 defaultConfig {
                     minSdk = 27
                 }
@@ -39,6 +38,9 @@ class AndroidLibraryConventionPlugin : Plugin<Project> {
 
 
             dependencies {
+                add("implementation", "androidx.core:core-ktx:1.12.0")
+                add("implementation", "org.jetbrains.kotlin:kotlin-stdlib")
+
                 add("implementation", "androidx.core:core-ktx:1.12.0")
                 add("implementation", "org.jetbrains.kotlin:kotlin-stdlib")
                 add("implementation", platform("androidx.compose:compose-bom:2025.02.00"))
