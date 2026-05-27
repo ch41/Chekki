@@ -43,7 +43,6 @@ class AndroidApplicationConventionPlugin : Plugin<Project> {
                 add("implementation", "androidx.core:core-ktx:1.12.0")
                 add("implementation", "org.jetbrains.kotlin:kotlin-stdlib")
 
-                //compose
                 add("implementation", platform("androidx.compose:compose-bom:2025.02.00"))
                 add("implementation", "androidx.compose.ui:ui")
                 add("implementation", "androidx.compose.ui:ui-graphics")
