@@ -12,6 +12,8 @@ fun initKoin(
     androidContext(app)
     appDeclaration()
     modules(
-        appModule
+        appModule,
+        dataModule,
+        viewModelModule
     )
 }

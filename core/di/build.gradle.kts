@@ -10,4 +10,11 @@ android {
 dependencies {
     implementation(libs.koin.android)
     implementation(libs.koin.compose)
+
+
+    implementation(project(":core:common"))
+
+    implementation(project(":feature:dashboard:ui"))
+    implementation(project(":feature:dashboard:data"))
+    implementation(project(":feature:dashboard:domain"))
 }

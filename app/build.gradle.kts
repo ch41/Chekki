@@ -35,5 +35,7 @@ dependencies {
     implementation(libs.androidx.navigation.compose)
 
     implementation(project(":core:design"))
+    implementation(project(":core:common"))
+    implementation(project(":core:navigation"))
     implementation(project(":core:di"))
 }
