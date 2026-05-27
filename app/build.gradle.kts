@@ -32,6 +32,7 @@ dependencies {
     implementation(libs.koin.android)
     implementation(libs.koin.compose)
 
+    implementation(libs.androidx.navigation.compose)
 
     implementation(project(":core:design"))
     implementation(project(":core:di"))
