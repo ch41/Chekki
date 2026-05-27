@@ -6,6 +6,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.example.navigation.model.AppDestinations
+import com.example.ui.screen.DashboardScreen
 
 @Composable
 fun AppNavHost(
@@ -17,22 +18,9 @@ fun AppNavHost(
     ) {
 
         composable<AppDestinations.Dashboard> {
-
+            DashboardScreen()
         }
 
-        composable<AppDestinations.Scanner> {
-        }
 
-        composable<AppDestinations.Receipts> {
-        }
-
-        composable<AppDestinations.Analytics> {
-        }
-
-        composable<AppDestinations.Settings> {
-        }
-
-        composable<AppDestinations.ReceiptDetails> { backStackEntry ->
-      }
     }
 }
