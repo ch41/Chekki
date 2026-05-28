@@ -42,24 +42,6 @@ fun DashboardScreen(
                 .size(100.dp)
                 .background(MaterialTheme.colorScheme.primary)
         )
-  /*      when (state) {
-            is DashboardState.Loading -> {
-                CircularProgressIndicator()
-            }
-            is DashboardState.Error -> {
-                Column(horizontalAlignment = Alignment.CenterHorizontally) {
-                    Text("Ошибка ${(state as DashboardState.Error).message}")
-                    Spacer(modifier = Modifier.height(8.dp))
-                    Button(onClick = { viewModel.sendEvent(DashboardIntent.LoadData) }) {
-                        Text("Повторить")
-                    }
-                }
-            }
-            is DashboardState.Success -> {
 
-            }
-
-            else -> {}
-        }*/
     }
 }
