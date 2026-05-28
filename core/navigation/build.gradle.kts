@@ -14,4 +14,5 @@ dependencies {
     implementation(libs.kotlinx.serialization.json)
 
     implementation(project(":feature:dashboard:ui"))
+    implementation(project(":feature:scanner:ui"))
 }

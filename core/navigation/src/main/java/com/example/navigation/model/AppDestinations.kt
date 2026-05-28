@@ -8,4 +8,7 @@ sealed class AppDestinations {
     @Serializable
     data object Dashboard : AppDestinations()
 
+    @Serializable
+    data object Scanner : AppDestinations()
+
 }

@@ -17,4 +17,8 @@ dependencies {
     implementation(project(":feature:dashboard:ui"))
     implementation(project(":feature:dashboard:data"))
     implementation(project(":feature:dashboard:domain"))
+
+    implementation(project(":feature:scanner:ui"))
+    implementation(project(":feature:scanner:data"))
+    implementation(project(":feature:scanner:domain"))
 }
